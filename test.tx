@@ -1,0 +1,1 @@
+SELECT * FROM ub_coupon as uc join ub_redeem_coupon as urc on uc.couponId=urc.couponId join ub_end_user as uec on uec.user_login_id=urc.user_login_id where uc.ownerId=19 AND uc.restaurantId = '1' 

@@ -1,0 +1,1 @@
+SELECT uac.*,uap.*,uc.*,uhs.campaignId as cId FROM ub_add_provider as uac join ub_coupon as uap on uap.ownerId=uac.user_login_id join ub_campaign as uc ON uc.couponId=uap.couponId left join ub_home_screen as uhs on uhs.campaignId=uc.campaignId where  1 and uc.serviceType=1 and uc.startDate<='2017-10-23' and uc.endDate>='2017-10-23' order by uc.campaignId desc
